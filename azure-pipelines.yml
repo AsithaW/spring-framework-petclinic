@@ -12,13 +12,11 @@ variables:
   azureSubscription: 'ac9d9b6c-dca7-4afe-8719-b63fc805a9a2'
 
   # Web app name
-  webAppName: 'jpipe'
+  webAppName: 'jpipe2'
 
   # Environment name
-  environmentName: 'jpipe'
+  environmentName: 'jpipe2'
 
-  # Agent VM image name
-  vmImageName: 'ubuntu-latest'
 
 stages:
 - stage: Build
@@ -60,7 +58,7 @@ stages:
         deploy:
           steps:
           - task: AzureWebApp@1
-            displayName: 'Azure Web App Deploy: jpipe'
+            displayName: 'Azure Web App Deploy: jpipe2'
             inputs:
               azureSubscription: $(azureSubscription)
               appType: webAppLinux
